@@ -5,40 +5,111 @@ body{
    
 }
 
+.tree, .formula{
+    display: inline-block;
+}
+
+.sun{
+    height: 250px;
+    width: 250px;
+    animation: sun 7s linear infinite;
+}
+
+@keyframes sun {
+    from {
+        transform: rotate(0deg);
+    }
+      to {
+        transform: rotate(360deg);
+    }
+}
 
 .tree{
-
     animation: tree 5s linear infinite;
-    margin-left: 500px;
-    margin-top: 100px;
+    margin-left: 960px;
+    margin-top: 110px;
     display: inline-block;
+    position: fixed;
+    z-index: 1;
 }
 
 .apple{
-    margin-left: 1200px;
-    margin-top: 150px;
+    margin-left: 1170px;
+    margin-top: 160px;
     width: 35px;
     height: 35px;
     position: fixed;
-    animation: apple 10s ease-in infinite;
+    animation: apple 5s ease-in infinite;
     display: inline-block;
-
-}
-
-.formula{
-    width: 150px;
-    height: 100px;
-    margin-left: 320px;
-    display: inline-block;
-    /* position: sticky; */
-
+    z-index: 2;
 }
 
 @keyframes apple{
-    from{margin-top: 150px;}
-    to{margin-top: 400px;}
+    from{margin-top: 160px;}
+    to{margin-top: 390px;}
 }
 
+
+.formula{
+    margin-top: 390px;
+    margin-left: 930px;
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+    position: fixed;
+    z-index: 3;
+    animation: formula 2s ease-in infinite;
+}
+
+@keyframes formula{
+    from {
+        transform: rotate(0deg);
+    }
+      to {
+        transform: rotate(359deg);
+    }
+}
+
+.formula1{
+    margin-top: 450px;
+    margin-left: 840px;
+    width: 150px;
+    height: 100px;
+    display: inline-block;
+    position: fixed;
+    z-index: 4;
+    transition: all 2s ease-in 0.2s;
+    opacity: 0;
+}
+
+.formula1:hover{
+    cursor: pointer;
+    transform:translate(-50%, -50%) rotate(1300deg);
+    opacity: 1;
+}
+
+
+.bird{
+    margin-top: 150px;
+    margin-left: 100px;
+    width: 350px;
+    height: 300px;
+    display: inline-block;
+    position: fixed;
+    z-index: 5;
+    animation: bird 16s linear infinite;
+}
+
+@keyframes bird {
+    from{
+        margin-top: 150px;
+        margin-left: -400px;
+    }
+    to{
+        margin-top: 0px;
+        margin-left: 1700px ;
+    }
+}
 
 
 
