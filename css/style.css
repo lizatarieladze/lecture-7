@@ -1,5 +1,5 @@
 body{
-    background-image: url("../empty-field-vector.jpg");
+    background-image: url("../imgs/empty-field-vector.jpg");
     background-repeat: no-repeat;
     background-size: cover;
    
@@ -84,7 +84,7 @@ body{
 
 .formula1:hover{
     cursor: pointer;
-    transform:translate(-50%, -50%) rotate(1300deg);
+    transform:translate(-50%, -50%) rotate(900deg);
     opacity: 1;
 }
 
