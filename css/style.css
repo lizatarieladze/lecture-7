@@ -5,7 +5,7 @@ body{
    
 }
 
-.tree, .formula{
+.tree, .formula, .sun {
     display: inline-block;
 }
 
@@ -103,7 +103,7 @@ body{
 @keyframes bird {
     from{
         margin-top: 150px;
-        margin-left: -400px;
+        margin-left: -610px;
     }
     to{
         margin-top: 0px;
